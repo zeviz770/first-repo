@@ -11,6 +11,20 @@
             margin: 0; /* Remove default margin */
             padding: 0;
             color: #333;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.5); /* Increase shadow visibility */
+        }
+
+        /* Add subtle filled color to all links */
+        a {
+            padding: 3px 6px; /* Add padding to improve spacing */
+            transition: background-color 0.3s ease; /* Smooth transition */
+            text-decoration: none; /* Remove default underline */
+            color: #3498db; /* Set link color */
+            background-color: #d6eaff; /* Set background color for links */
+        }
+
+        a:hover {
+            background-color: #b3d8ff; /* Change background color on hover */
         }
 
         header {
@@ -18,6 +32,11 @@
             padding: 50px;
             background-color: #87CEEB; /* Sky blue */
             color: #fff;
+        }
+
+        /* Make profile picture circular */
+        header img {
+            border-radius: 50%;
         }
 
         section {
@@ -43,15 +62,6 @@
             margin: 10px 0;
         }
 
-        .qualification-item a {
-            color: #3498db; /* Link color */
-            text-decoration: none;
-        }
-
-        .qualification-item a:hover {
-            text-decoration: underline;
-        }
-
         footer {
             text-align: center;
             padding: 20px;
@@ -75,7 +85,7 @@
     <section>
         <h2>About Me</h2>
         <ul class="qualifications">
-        <li class="qualification-item"><a href="zev cv.pdf">professional resume</a></li>
+            <li class="qualification-item"><a href="zev cv.pdf">professional resume</a></li>
         </ul>
         <div class="section-divider"></div>
     </section>
